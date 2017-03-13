@@ -77,7 +77,9 @@ body{
 	margin: 5px auto;
 }
 
-
+#developement{
+	padding-top: 3rem;
+}
 
 #footer{
 	position: absolute;
