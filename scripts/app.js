@@ -4,6 +4,18 @@
 
 $(document).ready(function(){
 	
+
+	var windowHeight = $(window).height();		
+
+	if(windowHeight < 826){
+		$("#wrapper").css("height", "185%");
+	}
+
+	if(windowHeight > 826){
+		$("#wrapper").css("height", "160%");
+	}
+
+
 	// Initialize Firebase
 	var config = {
 	apiKey: "AIzaSyDpTbuERk-tzFMBuGO3eRIFHG_uFQLtWIo",
@@ -59,6 +71,23 @@ $(document).ready(function(){
 	});
 
 
+	$(window).resize(function(){
+		var wrapperHeight = $("#wrapper").height();
+		var windowHeight = $(window).height();
+		console.log(wrapperHeight);
+		console.log(windowHeight);
+
+		if(windowHeight < 826){
+			$("#wrapper").css("height", "185%");
+		}
+
+
+		else if(windowHeight => 826){
+			$("#wrapper").css("height", "160%");
+		}
+
+
+	});
 	
 
 });
