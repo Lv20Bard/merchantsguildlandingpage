@@ -18,6 +18,7 @@ body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	width: 100%
 }
 
 #wrapper{
@@ -222,5 +223,58 @@ body{
 		text-align: center;
 	}
 }
+
+
+@media (max-width: 768px){
+	#brand{
+		font-size: 34px;
+	}
+
+	#mainContent{
+		top:65px;
+	}
+
+	#textSection{
+		text-align: center;
+	}
+
+	#formSection{
+		box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.75);
+		z-index: 2
+	}
+
+	#detailSection{
+		width: 104%;
+		top: 750px;
+		background-color: white;
+		z-index: 1;
+		box-shadow: -1px 11px 21px -5px rgba(255,255,255,1);
+
+	}
+
+	.lastInfo{
+		background-color: #f1f2eb;
+	}
+
+	#footer{
+		display:none;
+	}
+
+	#middleDetail{
+		border-left-style: none;
+		border-right-style: none;
+		border-top-style: solid;
+		border-bottom-style: solid;
+		border-width: 1px;
+
+	}
+	.detailTitle{
+		padding-top: 1rem;
+	}
+}
+
+
+
+
 
 
